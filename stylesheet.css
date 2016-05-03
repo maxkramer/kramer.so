@@ -1,0 +1,54 @@
+table {
+  table-layout: fixed;
+}
+
+h1 {
+  color: #272625;
+}
+
+h1 small {
+  color: #5e5e5f;
+}
+
+dt {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+section, dd:not(:last-child) {
+  padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.social {
+  padding-right: 5px;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.social:hover {
+  opacity: 0.5;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+}
+
+.fa-github-square {
+  color: #111;
+}
+
+.fa-envelope-square {
+  color: #A9A9A9;
+}
+
+.fa-linkedin-square {
+  color: #0077b5;
+}
