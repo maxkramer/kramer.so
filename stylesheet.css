@@ -22,7 +22,7 @@ section, dd:not(:last-child) {
 
 footer {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .social {
@@ -31,6 +31,10 @@ footer {
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
 }
 
 .social:hover {
@@ -51,4 +55,12 @@ footer {
 
 .fa-linkedin-square {
   color: #0077b5;
+}
+
+.fa-flickr {
+  color: #0063dc;
+}
+
+.fa-flickr:hover {
+  color: #ff0084;
 }

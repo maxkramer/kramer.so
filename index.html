@@ -4,17 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Hello. My name is Max Kramer. I’m an mobile-orientated software engineer living in London, UK." />
+    <meta name="keywords" content="max kramer,ios engineer,contract ios,iphone,ipad,website,ruby,swift,objective-c,developer,hire" />
+    <meta name="revisit-after" content="7 days">
+    <!-- ios engineer, developer, software -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@maxkramer">
+    <meta name="twitter:title" content="Max Kramer - Contract iOS Engineer">
+    <meta name="twitter:description" content="Hello. My name is Max Kramer. I’m an mobile-orientated software engineer living in London, UK.">
+    <meta name="og:title" content="Max Kramer - Contract iOS Engineer">
+    <meta name="og:url" content="http://maxkramer.co">
+    <meta name="og:description" content="Hello. My name is Max Kramer. I’m an mobile-orientated software engineer living in London, UK.">
+    <meta name="og:locale" content="en_GB">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="set1.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <title>Max Kramer</title>
+    <title>Max Kramer - Contract iOS Engineer</title>
   </head>
   <body>
+  <!-- Thanks to:
+      http://www.cssdesignawards.com/articles/round-up-38-neat-css-js-hover-effects/101/ for the Flickr image hover effects
+
+      http://codepen.io/gabrieleromanato/pen/nfqJi for the Flickr JS inspiration
+   -->
     <div class="container">
       <div class="page-header">
         <h1>Max Kramer <small>Software engineer</small></h1>
         <a href="https://twitter.com/maxkramer"><i id="social-tw" class="fa fa-twitter-square fa-2x social fade"></i></a>
+        <a href="https://www.flickr.com/photos/maxkramer/albums"><i id="social-em" class="fa fa-flickr fa-2x social fade"></i></a>
         <a href="https://github.com/maxkramer"><i id="social-gh" class="fa fa-github-square fa-2x social fade"></i></a>
         <a href="https://www.linkedin.com/in/mxkrm"><i id="social-li" class="fa fa-linkedin-square fa-2x social fade"></i></a>
         <a href="mailto:max@maxkramer.co"><i id="social-em" class="fa fa-envelope-square fa-2x social fade"></i></a>
@@ -24,7 +43,7 @@
       <p>More information can be found through <a href="https://www.linkedin.com/in/mxkrm">LinkedIn</a> or on my <a href="https://www.dropbox.com/s/cgjz23ubtxggyff/CV.pdf?dl=0">cv</a>.</p>
       </section>
       <section name="technical-skills">
-        <h4>Key Technical skills</h4>
+        <h4>Technical skills</h4>
         <ul>
           <li>6 years commercial experience in both Objective-C/Swift</li>
           <li>Deep knowledge of iOS frameworks including Core Network, Core Data, Core Location, MapKit, Core Bluetooth and Grand Central Dispatch</li>
@@ -57,7 +76,7 @@
               <dd>A port of the Luhn Algorithm for validating credit-card details</dd>
               <dt><a href="https://github.com/MaxKramer/CINBouncyButton">CINBouncyButton</a></dt>
               <dd>UIButton, but bouncier and capable for use with your own icons and attributed text.</dd>
-              <dt><a href="https://github.com/MaxKramer/RTFAddLocationViewController">RTFAddLocationViewController</a></dt>
+              <dt><a href="https://github.com/MaxKramer/RTFAddLocationViewController">Add Location VC</a></dt>
               <dd>A drop-in class for allowing users to quickly select a location from a map, including place autocompletion and geocoding.</dd>
               <dt><a href="https://github.com/MaxKramer">Github</a></dt>
               <dd>You can view more of my OSS contributions on Github, itself.</dd>
@@ -84,12 +103,13 @@
       <section name="volunteering">
         <h4>Volunteer work</h4>
         <h5>Nepal</h5>
-        <p>Over October and November, 2016, I took part in a volunteering programme with <a href="https://www.podvolunteer.org/">POD</a> to spend time at an orphanage in Pokhara, Nepal to support the street-kids that lived at the centre, and taught at a local school.</p>
+        <p>Over October and November, 2016, I took part in a volunteering programme with <a href="https://www.podvolunteer.org/">POD Volunteers</a> to spend time at an orphanage in Pokhara, Nepal to support the street-kids that lived at the centre, and taught at a local school.</p>
         <p>I always look to give back to the community and provide help and support as/when I can. Often it's incredibly difficult to make a valuable change. Unfortunately, solely visiting Nepal and spending time with the young, energetic and enthusiastic children was not enough to change their lives for the better, so I remain in contact with some of the children at the centre, as well as the staff that run it in order to help in any way I can.</p>
         <h5>Thinkspace</h5>
         <p>Coding, in general, is rarely taught in schools and arguably should be a vital part of the nationwide curriculum. Programming teaches students the benefits of logical thinking and encourages them to design and develop their own products, as the world becomes even more engrossed in technology.</p>
         <p>As a result, I set-up a Thinkspace - an area for students to learn how to code, at <a href="http://ucs.org.uk">UCS School for Boys</a>. It was overwhelming to have more students turn up to the first session, than computers in the room!</p>
       </section>
+      <div class="grid" id="flickr"></div>
     </div>
     <footer>
       <span>&copy; 2016 Max Kramer</span>
@@ -103,5 +123,6 @@
       ga('create', 'UA-38565328-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script src="flickr.js"></script>
   </body>
 </html>
