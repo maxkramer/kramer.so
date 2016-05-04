@@ -7,36 +7,41 @@
 
   Flickr.prototype = {
     init: function() {
-      this.api_key = "58530943e41f2b094130938c9655c862";
       this.user = "95906194@N04";
-      this.album = "72157665554260823";
-      this.limit = 9;
+      this.displayLimit = 10;
       window.getPhotos = this.getPhotos;
-
       this.getJSON();
     },
     getJSON: function() {
-      var src = "https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=" + this.api_key + "&user_id=" + this.user + "&safe_search=1&extras=date_upload,url_z&per_page=" + this.limit + "&format=json&jsoncallback=getPhotos";
+      var src = "https://api.flickr.com/services/feeds/photos_public.gne?id=" + this.user + "&format=json&jsoncallback=getPhotos";
       var script = document.createElement("script");
       script.src = src;
       document.body.appendChild(script);
     },
     getPhotos: function( data ) {
-      if (data && data.photos.photo) {
-        var photos = data.photos.photo;
-        var html = "<h4>Photography</h4><p>When I can, I like to spend time travelling and taking photos. Here are some of the latest from my <a href=\"https://www.flickr.com/photos/maxkramer\">Flickr</a>.";
-            html += "<div class='images'>";
+      if (data && data.items) {
+        var photos = data.items;
+        var headingHTML = "<h4>Photography</h4><p>When I can, I like to spend time travelling and taking photos. Here are some of the latest from my <a href='" + data.link + "'>Flickr</a>.<div class=\"grid\" id=\"flickr\"></div>";
+        var html = "<div class='images'>";
 
-        photos.forEach(function(photo) {
-          date = relativeDate(new Date(photo.dateupload * 1000));
-          html += "<a href='https://www.flickr.com/photos/" + this.user + "/" + photo.id + "'><figure class=\"effect-honey\">";
-          html += "<img class='img-responsive' src='" + photo.url_z + "' alt=" + photo.title + "/>";
+        var limit = 10;
+        if (limit > photos.length) {
+          limit = photos.length
+        }
+
+        for (var idx = 0; idx < limit; idx++) {
+          var photo = photos[idx];
+          var bigImageURL = photo.media.m.replace("_m.jpg", "_z.jpg");
+          var date = relativeDate(new Date(photo.published));
+          html += "<a href='" + photo.link + "'><figure class=\"effect-honey\">";
+          html += "<img class='img-responsive' src='" + bigImageURL + "' alt=" + photo.title + "/>";
           html += "<figcaption>";
           html += "<h2><span>" + photo.title + "<br /></span><i>Uploaded " + date + "</i></h2>";
           html += "</figcaption>";
           html += "</figure></a>";
-        });
+        }
 
+        document.querySelector("#flickr_container").innerHTML = headingHTML;
         document.querySelector("#flickr").innerHTML = html;
       }
     }
