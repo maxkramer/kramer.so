@@ -2,11 +2,23 @@ table {
   table-layout: fixed;
 }
 
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Muli-Regular.ttf') format('truetype');
+}
+
 h1 {
   color: #272625;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 h1 small {
+  font-family: sans-serif;
+  font-weight: 300;
+  letter-spacing: inherit;
   color: #5e5e5f;
 }
 
