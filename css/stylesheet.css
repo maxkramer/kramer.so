@@ -9,6 +9,10 @@ table {
   src: url('../fonts/Muli-Regular.ttf') format('truetype');
 }
 
+body {
+  font-family: 'Lora', serif;
+}
+
 h1 {
   color: #272625;
   font-family: 'Muli', sans-serif;
