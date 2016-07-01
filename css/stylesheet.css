@@ -1,29 +1,48 @@
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Catamaran-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/Lora-Bold.ttf') format('truetype');
+}
+
 table {
   table-layout: fixed;
 }
 
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Muli-Regular.ttf') format('truetype');
-}
-
 body {
   font-family: 'Lora', serif;
+  font-style: normal;
 }
 
 h1 {
   color: #272625;
-  font-family: 'Muli', sans-serif;
-  font-weight: 400;
+  font-family: 'Catamaran', sans-serif;
 }
 
 h1 small {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: 'Catamaran';
   letter-spacing: inherit;
   color: #5e5e5f;
+}
+
+h5 {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 1.1em;
 }
 
 dt {
