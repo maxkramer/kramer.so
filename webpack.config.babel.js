@@ -64,7 +64,7 @@ if (env === 'production') {
     compress: true,
     clientLogLevel: 'none',
     contentBase: path.resolve('./docs'),
-    publicPath: '/docs',
+    publicPath: '/',
     quiet: true,
     hot: true,
     watchOptions: {

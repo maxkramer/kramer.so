@@ -16,7 +16,7 @@ const emailUrl = process.env.EMAIL_URL;
 class SocialButtonGroup extends Component {
   render() {
     return (
-      <Box direction={'row'} pad={{ between: 'small' }} >
+      <Box direction={'row'} responsive={false} pad={{ between: 'small' }} >
         <SocialButton href={linkedInUrl} icon={<LinkedInIcon />} />
         <SocialButton href={githubUrl} icon={<GithubIcon />} />
         <SocialButton href={twitterUrl} icon={<TwitterIcon />} />
