@@ -59,7 +59,6 @@ if (env === 'production') {
     require.resolve('react-dev-utils/webpackHotDevClient'),
     './src/js/index.js'
   ];
-  plugins.push(new Dotenv());
   devConfig.devServer = {
     compress: true,
     clientLogLevel: 'none',
@@ -74,6 +73,7 @@ if (env === 'production') {
   };
 }
 
+plugins.push(new Dotenv());
 plugins.push(new webpack.LoaderOptionsPlugin(loaderOptionsConfig));
 
 export default Object.assign({
