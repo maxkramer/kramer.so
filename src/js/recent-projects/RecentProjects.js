@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Heading, Tiles } from 'grommet';
+import {Box, Heading, Tiles} from 'grommet';
 import RecentProject from './RecentProject';
 
 export default class RecentProjects extends Component {
@@ -15,6 +15,7 @@ export default class RecentProjects extends Component {
             imageSrc={'/img/bcgdv.svg'}
           header={'Senior Engineer'}
           subtitle={'Confidential'}
+            link={'https://bcgdv.com'}
             description={[
             'I am currently working on an exciting project in the B2C sector. This involves creating a\n' +
                            'consumer-facing website to sell our product, as well as scaling-related challenges integrating\n' +
@@ -31,6 +32,7 @@ export default class RecentProjects extends Component {
           imageSrc={'/img/heycar.svg'}
             header={'Senior Engineer'}
             subtitle={'HeyCar'}
+            link={'https://hey.car'}
             description={[
             'HeyCar combines the best dealers and the best cars without hosting advertorials. Their\n' +
                            '                      aim was to tackle this market and to become one of the leading players in DACH region very\n' +
@@ -45,6 +47,7 @@ export default class RecentProjects extends Component {
             imageSrc={'/img/coup.svg'}
             header={'iOS Engineer'}
             subtitle={'COUP Mobility'}
+            link={'https://joincoup.com'}
             description={[
             'At COUP, I played an integral part of the venture, leading the development of the iOS app and supporting the Android.',
             'This involved implementing the client-side hardware (iOS → Scooter) interaction as well as taking a driving-role' +

@@ -1,8 +1,8 @@
 import path from 'path';
 import webpack from 'webpack';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
 
-const Dotenv = require('dotenv-webpack');
 const env = process.env.NODE_ENV || 'production';
 
 let plugins = [
@@ -11,7 +11,8 @@ let plugins = [
     'process.env': {
       NODE_ENV: JSON.stringify(env)
     }
-  })
+  }),
+  new Dotenv()
 ];
 
 const loaderOptionsConfig = {
@@ -73,7 +74,6 @@ if (env === 'production') {
   };
 }
 
-plugins.push(new Dotenv());
 plugins.push(new webpack.LoaderOptionsPlugin(loaderOptionsConfig));
 
 export default Object.assign({

@@ -5,8 +5,8 @@ import { Timestamp } from 'grommet';
 
 export default class Footer extends Component {
   render() {
-    return (<PageFooter justify='between' size='large'>
-      <Paragraph margin='none'>&copy; Max Kramer <Timestamp fields={['year']} value={new Date()} /></Paragraph>
+    return (<PageFooter justify={'center'}>
+      <Paragraph>&copy; Max Kramer <Timestamp fields={['year']} value={new Date()} /></Paragraph>
     </PageFooter>);
   }
 }
