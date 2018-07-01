@@ -14,7 +14,7 @@ export default class RecentProjects extends Component {
             { label: 'Team Leadership', value: 30, colorIndex: 'graph-3' }]}
             imageSrc={'/img/bcgdv.svg'}
           header={'Senior Engineer'}
-          subtitle={'Coming Soon'}
+          subtitle={'Confidential'}
             description={[
             'I am currently working on an exciting project in the B2C sector. This involves creating a\n' +
                            'consumer-facing website to sell our product, as well as scaling-related challenges integrating\n' +
