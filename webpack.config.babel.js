@@ -63,8 +63,8 @@ if (env === 'production') {
   devConfig.devServer = {
     compress: true,
     clientLogLevel: 'none',
-    contentBase: path.resolve('./dist'),
-    publicPath: '/',
+    contentBase: path.resolve('./docs'),
+    publicPath: '/docs',
     quiet: true,
     hot: true,
     watchOptions: {
