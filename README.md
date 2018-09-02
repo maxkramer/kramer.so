@@ -1,6 +1,6 @@
-# website
+# Personal Website
 
-This is a sample Grommet application for reference.
+This is my personal website - maxkramer.co - written in Grommet.js as an experiment with frontend 'react-like' frameworks.
 
 To run this application, execute the following commands:
 
@@ -19,7 +19,7 @@ To run this application, execute the following commands:
   3. Create the app distribution to be used by a back-end server
 
     ```
-    $ NODE_ENV=production grommet pack
+    $ npm run dist
     ```
 
   4. Test and run linters:
