@@ -12,6 +12,7 @@ export default class BasicApp extends Component {
   render() {
     return (
       <App>
+        <Box pad={{horizontal: "medium"}}>
         <Box pad={{vertical: "medium"}}/>
         <Box pad={{between: "large", vertical: "small"}}>
           <Header/>
@@ -19,6 +20,7 @@ export default class BasicApp extends Component {
           <RecentProjects/>
         </Box>
         <Footer/>
+        </Box>
       </App>
     );
   }

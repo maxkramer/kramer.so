@@ -13,7 +13,7 @@ export default class RecentProjects extends Component {
             { label: 'Infrastructure', value: 30, colorIndex: 'graph-2' },
             { label: 'Team Leadership', value: 30, colorIndex: 'graph-3' }]}
             imageSrc={'/img/bcgdv.svg'}
-          header={'Senior Engineer'}
+          header={'Backend and Infrastructure Lead'}
           subtitle={'Confidential'}
             link={'https://bcgdv.com'}
             description={[
