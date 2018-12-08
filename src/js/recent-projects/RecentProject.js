@@ -5,9 +5,9 @@ import LearnMoreIcon from 'grommet/components/icons/base/FormNextLink';
 
 export default class RecentProject extends Component {
   render() {
-    return (<Tile pad={{vertical: 'large'}}>
+    return (<Tile pad={{ vertical: 'large' }}>
       <Card
-        thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} /></Box>}
+        thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} alt={'recent-project'} /></Box>}
         heading={this.props.header}
         label={this.props.subtitle}
         textSize={'small'}

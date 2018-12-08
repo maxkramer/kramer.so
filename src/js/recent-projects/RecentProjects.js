@@ -26,7 +26,7 @@ export default class RecentProjects extends Component {
                            '                      of our backend services.'
           ]} />
           <RecentProject distributionSeries={[
-            { label: 'Microservices in Java / Kotlin with Spring' + ' Boot', value: 70, colorIndex: 'graph-1' },
+            { label: 'Microservices in Java / Kotlin with Spring Boot', value: 70, colorIndex: 'graph-1' },
             { label: 'Infrastructure', value: 20, colorIndex: 'graph-2' },
             { label: 'Golang', value: 10, colorIndex: 'graph-3' }]}
           imageSrc={'/img/heycar.svg'}
