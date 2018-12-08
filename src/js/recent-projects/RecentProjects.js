@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Box, Heading, Tiles} from 'grommet';
+import { Box, Heading, Tiles } from 'grommet';
 import RecentProject from './RecentProject';
 
 export default class RecentProjects extends Component {
@@ -13,8 +13,8 @@ export default class RecentProjects extends Component {
             { label: 'Infrastructure', value: 30, colorIndex: 'graph-2' },
             { label: 'Team Leadership', value: 30, colorIndex: 'graph-3' }]}
             imageSrc={'/img/bcgdv.svg'}
-          header={'Backend and Infrastructure Lead'}
-          subtitle={'Confidential'}
+            header={'Backend and Infrastructure Lead'}
+            subtitle={'Confidential'}
             link={'https://bcgdv.com'}
             description={[
             'I am currently working on an exciting project in the B2C sector. This involves creating a\n' +
@@ -29,7 +29,7 @@ export default class RecentProjects extends Component {
             { label: 'Microservices in Java / Kotlin with Spring Boot', value: 70, colorIndex: 'graph-1' },
             { label: 'Infrastructure', value: 20, colorIndex: 'graph-2' },
             { label: 'Golang', value: 10, colorIndex: 'graph-3' }]}
-          imageSrc={'/img/heycar.svg'}
+            imageSrc={'/img/heycar.svg'}
             header={'Senior Engineer'}
             subtitle={'HeyCar'}
             link={'https://hey.car'}
