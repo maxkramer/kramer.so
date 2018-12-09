@@ -9,11 +9,12 @@ export default class SocialButton extends Component {
   }
 
   render() {
-    return <Button href={this.props.href}>{this.props.icon}</Button>;
+    return <Button href={this.props.href} title={this.props.title}>{this.props.icon}</Button>;
   }
 }
 
 SocialButton.propTypes = {
   href: PropTypes.string.isRequired,
-  icon: PropTypes.element.isRequired
+  icon: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired
 };

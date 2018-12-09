@@ -14,7 +14,7 @@ export default class RecentProject extends Component {
         description={<Box pad={{ between: 'small' }}>
           {this.props.description.map(description => (<Paragraph>{description}</Paragraph>))}
         </Box>}>
-        <Box pad={{ vertical: 'medium' }}><Anchor label={<Label>Visit Website</Label>} icon={<LearnMoreIcon />} href={this.props.link} /></Box>
+        <Box pad={{ vertical: 'medium' }}><Anchor a11yTitle={`Visit ${this.props.link}`} label={<Label>Visit Website</Label>} icon={<LearnMoreIcon />} href={this.props.link} /></Box>
         <Distribution series={this.props.distributionSeries} units={'%'} />
       </Card>
     </Tile>);
