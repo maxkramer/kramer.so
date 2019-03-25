@@ -7,8 +7,9 @@ export default class TechnicalSkills extends Component {
       <article>
         <Heading tag={'h4'} uppercase={true}>Technical skills</Heading>
         <List>
+          <ListItem>Backend team lead, responsible for delivery and driving architectural decisions.</ListItem>
           <ListItem>Expertise in micro-services architecture, large-scale backend web-development and CI/CD pipelines</ListItem>
-          <ListItem>Strong infrastructure skills, working with Kubernetes on AWS (Kops) and Google Cloud (GKE). Infrastructure as code with Terraform </ListItem>
+          <ListItem>Strong infrastructure skills, working with Kubernetes on AWS and Google Cloud (GKE). Infrastructure as code with Terraform </ListItem>
           <ListItem>Substantial proficiency in Spring Boot (and relevant frameworks) with Kotlin and Java</ListItem>
           <ListItem>6 years commercial iOS development experience in both Objective-C and Swift</ListItem>
         </List>

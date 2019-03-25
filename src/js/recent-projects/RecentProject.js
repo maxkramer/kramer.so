@@ -7,7 +7,7 @@ export default class RecentProject extends Component {
   render() {
     return (<Tile pad={{ vertical: 'large' }}>
       <Card
-        thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} alt={'recent-project'} /></Box>}
+        thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} fit="contain" alt={'recent-project'} /></Box>}
         heading={this.props.header}
         label={this.props.subtitle}
         textSize={'small'}
@@ -15,14 +15,12 @@ export default class RecentProject extends Component {
           {this.props.description.map(description => (<Paragraph>{description}</Paragraph>))}
         </Box>}>
         <Box pad={{ vertical: 'medium' }}><Anchor a11yTitle={`Visit ${this.props.link}`} label={<Label>Visit Website</Label>} icon={<LearnMoreIcon />} href={this.props.link} /></Box>
-        <Distribution series={this.props.distributionSeries} units={'%'} />
       </Card>
     </Tile>);
   }
 }
 
 RecentProject.propTypes = {
-  distributionSeries: PropTypes.array.isRequired,
   imageSrc: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,

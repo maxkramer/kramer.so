@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <Box direction={"column"}>
         <Headline>Hello. My name is Max Kramer.<br/></Headline>
-        <Headline id={"subtitle"} size={"small"}>I’m a senior software engineer at BCG Digital Ventures,
+        <Headline id={"subtitle"} size={"small"}>I’m a senior software engineer and team lead at BCG Digital Ventures,
           Berlin.</Headline>
         <SocialButtonGroup/>
       </Box>
