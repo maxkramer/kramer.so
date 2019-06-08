@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Heading, List, ListItem } from 'grommet';
+import { Heading, List, ListItem, Article } from 'grommet';
 
 export default class TechnicalSkills extends Component {
   render() {
     return (
-      <article>
-        <Heading tag={'h4'} uppercase={true}>ABOUT</Heading>
+      <Article>
+        <Heading tag={'h4'} uppercase={true}>DAY TO DAY</Heading>
         <List>
           <ListItem>Team lead accountable for delivery and driving product and architectural decisions</ListItem>
           <ListItem>Responsible for managing stakeholders, presenting tech to corporate-partners, and ensuring team happiness</ListItem>
@@ -14,7 +14,7 @@ export default class TechnicalSkills extends Component {
           <ListItem>Significant proficiency in Spring Boot (and relevant frameworks) with Kotlin and Java. Experienced with Golang, Ruby and JS</ListItem>
           <ListItem>6 years experience as a commercial mobile-development lead with both iOS and Android</ListItem>
         </List>
-      </article>
+      </Article>
     );
   }
 }

@@ -18,7 +18,7 @@ const mediumUrl = process.env.MEDIUM_URL;
 class SocialButtonGroup extends Component {
   render() {
     return (
-      <Box direction={'row'} responsive={false} pad={{ between: 'small' }} >
+      <Box direction={'row'} responsive={false} pad={{ vertical: 'small', between: 'small' }} >
         <SocialButton href={twitterUrl} title='@UINT_MAX on Twitter' icon={<TwitterIcon />} />
         <SocialButton href={linkedInUrl} title='LinkedIn' icon={<LinkedInIcon />} />
         <SocialButton href={mediumUrl} title='Medium Blog' icon={<MediumIcon />} />

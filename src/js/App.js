@@ -11,13 +11,13 @@ export default class BasicApp extends Component {
   render() {
     return (
       <App centered={false}>
-        <Box pad={{ horizontal: 'medium', vertical: 'medium' }}>
+        <Box pad={{ horizontal: 'medium', vertical: 'large' }}>
           <Box alignSelf={'center'} pad={{ between: 'large', vertical: 'small' }}>
             <Header />
             <TechnicalSkills />
-            <Heading tag={'h4'} uppercase={true}>Recent Projects</Heading>
+            <Heading tag={'h4'} uppercase={true}>I've helped to build</Heading>
           </Box>
-          <Box full={"horizontal"} pad={{vertical: 'medium'}}>
+          <Box full={"horizontal"}>
             <RecentProjects />
           </Box>
           <Footer />

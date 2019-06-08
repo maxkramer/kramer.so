@@ -6,15 +6,18 @@ import LearnMoreIcon from 'grommet/components/icons/base/FormNextLink';
 export default class RecentProject extends Component {
   render() {
     return (
-      <Card
-        thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} fit="contain" alt={'recent-project'} /></Box>}
+      <Card pad={{vertical: 'large'}}
+        thumbnail={
+          <Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}>
+          <Anchor a11yTitle={`Visit ${this.props.link}`} href={this.props.link}>
+            <Image src={this.props.imageSrc} fit="contain" alt={'recent-project'} /></Anchor></Box>}
         heading={this.props.header}
         label={this.props.subtitle}
         textSize={'small'}
-        description={<Box pad={{ between: 'small' }}>
-          {this.props.description.map(description => (<Paragraph>{description}</Paragraph>))}
-        </Box>}>
-        <Box pad={{ vertical: 'medium' }}><Anchor a11yTitle={`Visit ${this.props.link}`} label={<Label>Visit Website</Label>} icon={<LearnMoreIcon />} href={this.props.link} /></Box>
+        description={
+          <Box pad={{ between: 'small' }}>
+            {this.props.description.map(description => (<Paragraph>{description}</Paragraph>))}
+          </Box>}>
       </Card>
     );
   }
