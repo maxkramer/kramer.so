@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import App from 'grommet/components/App';
-import Box from 'grommet/components/Box';
+import {App, Box, Heading} from 'grommet';
 
 import Footer from './footer/Footer';
 import Header from './header/Header';
@@ -11,12 +10,14 @@ import RecentProjects from './recent-projects/RecentProjects';
 export default class BasicApp extends Component {
   render() {
     return (
-      <App>
-        <Box pad={{ horizontal: 'medium' }}>
-          <Box pad={{ vertical: 'medium' }} />
-          <Box pad={{ between: 'large', vertical: 'small' }}>
+      <App centered={false}>
+        <Box pad={{ horizontal: 'medium', vertical: 'medium' }}>
+          <Box alignSelf={'center'} pad={{ between: 'large', vertical: 'small' }}>
             <Header />
             <TechnicalSkills />
+            <Heading tag={'h4'} uppercase={true}>Recent Projects</Heading>
+          </Box>
+          <Box full={"horizontal"} pad={{vertical: 'medium'}}>
             <RecentProjects />
           </Box>
           <Footer />

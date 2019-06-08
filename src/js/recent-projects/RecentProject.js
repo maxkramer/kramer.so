@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Anchor, Box, Card, Distribution, Image, Label, Paragraph, Tile } from 'grommet';
+import { Anchor, Box, Card, Image, Label, Paragraph, Tile } from 'grommet';
 import PropTypes from 'prop-types';
 import LearnMoreIcon from 'grommet/components/icons/base/FormNextLink';
 
 export default class RecentProject extends Component {
   render() {
-    return (<Tile pad={{ vertical: 'large' }}>
+    return (
       <Card
         thumbnail={<Box direction={'row'} alignSelf={'center'} size={'small'} basis={'xsmall'}><Image src={this.props.imageSrc} fit="contain" alt={'recent-project'} /></Box>}
         heading={this.props.header}
@@ -16,7 +16,7 @@ export default class RecentProject extends Component {
         </Box>}>
         <Box pad={{ vertical: 'medium' }}><Anchor a11yTitle={`Visit ${this.props.link}`} label={<Label>Visit Website</Label>} icon={<LearnMoreIcon />} href={this.props.link} /></Box>
       </Card>
-    </Tile>);
+    );
   }
 }
 
@@ -25,5 +25,5 @@ RecentProject.propTypes = {
   header: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.arrayOf(PropTypes.string).isRequired,
-  link: PropTypes.element.isRequired
+  link: PropTypes.string.isRequired
 };
