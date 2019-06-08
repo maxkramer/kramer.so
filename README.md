@@ -1,4 +1,5 @@
 # Personal Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed4b170a-025e-44c3-8fd0-8c6f6a62f2f2/deploy-status)](https://app.netlify.com/sites/zealous-agnesi-b8f402/deploys)
 
 This is my personal website - maxkramer.co - written in Grommet.js as an experiment with frontend 'react-like' frameworks.
 

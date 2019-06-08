@@ -3,10 +3,14 @@ import webpack from 'webpack';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import Dotenv from 'dotenv-webpack';
 
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+
 const env = process.env.NODE_ENV || 'production';
 
 let plugins = [
   new CopyWebpackPlugin([{ from: './public' }]),
+  new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
   new webpack.DefinePlugin({
     'process.env': {
       NODE_ENV: JSON.stringify(env)
@@ -28,31 +32,19 @@ const loaderOptionsConfig = {
 const devConfig = {};
 if (env === 'production') {
   loaderOptionsConfig.minimize = true;
-  // plugins.push(
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     sourceMap: true,
-  //     uglifyOptions: { ecma: 8},
-  //     compress: {
-  //       warnings: false,
-  //       screw_ie8: true,
-  //       conditionals: true,
-  //       unused: true,
-  //       comparisons: true,
-  //       sequences: true,
-  //       dead_code: true,
-  //       evaluate: true,
-  //       if_return: true,
-  //       join_vars: true,
-  //     },
-  //     mangle: {
-  //       screw_ie8: true
-  //     },
-  //     output: {
-  //       comments: false,
-  //       screw_ie8: true
-  //     }
-  //   })
-  // );
+  plugins.push(
+    new UglifyJsPlugin({
+      sourceMap: true,
+      cache: true,
+      parallel: true,
+      uglifyOptions: {
+        warnings: false,
+        parse: {},
+        compress: {},
+        mangle: true,
+        output: null
+      }
+    }));
 } else {
   plugins = plugins.concat([
     new webpack.HotModuleReplacementPlugin()
@@ -105,7 +97,8 @@ export default Object.assign({
         test: /\.scss$/,
         use: [
           { loader: 'file-loader', options: { name: '[name].css' } },
-          { loader: 'sass-loader',
+          {
+            loader: 'sass-loader',
             options: {
               outputStyle: 'compressed',
               includePaths: [
