@@ -15,9 +15,9 @@ export default class BasicApp extends Component {
           <Box alignSelf={'center'} pad={{ between: 'large', vertical: 'small' }}>
             <Header />
             <TechnicalSkills />
-            <Heading tag={'h4'} uppercase={true}>I've helped to build</Heading>
+            <Heading tag={'h4'} uppercase={true}>Recent Work</Heading>
           </Box>
-          <Box full={"horizontal"}>
+          <Box full={"horizontal"} pad={{vertical: 'small'}} >
             <RecentProjects />
           </Box>
           <Footer />

@@ -5,13 +5,14 @@ import RecentProject from './RecentProject';
 export default class RecentProjects extends Component {
   render() {
     return (
-      <Tiles fill={true} align={'start'}>
+      <Tiles fill={true}>
         <RecentProject imageSrc={'/img/up42.svg'}
           header={'Backend Lead'}
           subtitle={'UP42'}
-          link={'http://up42.com'}
+          link={'https://up42.com'}
           description={[
-            'UP42 is an open platform and marketplace dedicated to helping developers and startups build, run, and scale geospatial products. UP42 opens up access to geospatial data, imagery, and processing algorithms — allowing users to develop, launch, and monetise game-changing new products'
+            'UP42 is an open platform and marketplace dedicated to helping developers and startups build, run, and scale geospatial products. UP42 opens up access to geospatial data, imagery, and processing algorithms — allowing users to develop, launch, and monetise game-changing new products',
+            'I lead the engineering team to develop a scalable and secure system that would support a large number of user\'s running their machine-learning algorithms against our satellite data at once. We leverage the Google Cloud Platform and Kubernetes to deal with these issues.'
           ]} />
         <RecentProject imageSrc={'/img/nexure.svg'}
           header={'Backend Lead'}
