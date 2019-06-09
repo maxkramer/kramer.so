@@ -6,9 +6,8 @@ class Header extends Component {
   render() {
     return (
       <Box direction={"column"}>
-        <Heading>Hello. My name is Max Kramer.<br/></Heading>
-        <Headline id={"subtitle"} size={"small"}>I’m an Engineering Lead at BCG Digital Ventures,
-          Berlin.</Headline>
+        <Heading>Hello. My name is Max Kramer.</Heading>
+        <Heading tag={'h2'} size={"small"}>I’m an Engineering Lead at BCG Digital Ventures, Berlin.</Heading>
         <SocialButtonGroup/>
       </Box>
     );
