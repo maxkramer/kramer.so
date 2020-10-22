@@ -8,3 +8,13 @@
 [build]
   command = "yarn build"
   publish = "build"
+
+[[headers]]
+# Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
