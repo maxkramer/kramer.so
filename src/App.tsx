@@ -1,6 +1,5 @@
 import React from 'react';
 import {Box, Footer, grommet, Grommet, Heading, Text} from 'grommet';
-import {css} from 'styled-components';
 import Header from "./header/Header";
 import About from "./about/About";
 import RecentProjects from "./recent-projects/RecentProjects";
@@ -30,7 +29,7 @@ const theme = {
     heading: {
         weight: 300,
         letterSpacing: 1,
-        extend: css({ 'letter-spacing': '0.05em' })
+        extend: "'letter-spacing': '0.05em'"
     },
 };
 
