@@ -9,6 +9,10 @@
   command = "yarn build"
   publish = "build"
 
+[[plugins]]
+  package = "netlify-plugin-hashfiles"
+  staticDir = "/static/"
+
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.
   for = "/*"
