@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import {Avatar, Box, Heading} from 'grommet';
+import {Avatar, Box, Heading, Image} from 'grommet';
 import SocialButtonGroup from './SocialButtonGroup';
 import Max from '../Max.webp'
+import styles from "../App.module.scss"
 
 class Header extends Component {
     render() {
         return (
             <Box alignSelf={'center'} direction={'column'}>
-                <Avatar alignSelf={'center'} animation={'fadeIn'} size={'150px'} src={Max} />
+                <Image alignSelf={'center'} className={styles.avatar} src={Max} loading={'lazy'} />
                 <SocialButtonGroup alignSelf={'center'} margin={{top: 'small'}} />
                 <Box direction={'column'} margin={{top: 'medium'}}>
                     <Heading level={1} margin={{top: 'none', bottom: 'small'}} size={'medium'} a11yTitle={''}>Hello. My name is Max Kramer.</Heading>
