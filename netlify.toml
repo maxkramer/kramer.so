@@ -16,5 +16,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    Content-Security-Policy = "default-src 'self'; script-src; script-src-elem; script-src-attr; style-src; style-src-elem; style-src-attr; img-src; font-src; connect-src; media-src; object-src; prefetch-src; child-src; frame-src; worker-src; frame-ancestors; form-action; base-uri; manifest-src; plugin-types; report-uri; report-to"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
