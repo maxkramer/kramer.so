@@ -18,7 +18,7 @@
     X-XSS-Protection = "1; mode=block"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net"
-    X-Content-Security-Policy = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net"
-    X-WebKit-CSP = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net"
+    Content-Security-Policy = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net; script-src-elem https://ajax.cloudflare.com https://www.googletagmanager.com https://*.cloudfront.net"
+    X-Content-Security-Policy = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net; script-src-elem https://ajax.cloudflare.com https://www.googletagmanager.com https://*.cloudfront.net"
+    X-WebKit-CSP = "default-src 'self' data:; script-src https://ajax.cloudflare.com; style-src 'unsafe-inline' *.cloudfront.net; script-src-elem https://ajax.cloudflare.com https://www.googletagmanager.com https://*.cloudfront.net"
 
