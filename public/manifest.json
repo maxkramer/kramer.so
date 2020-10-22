@@ -1,5 +1,7 @@
 {
- "name": "App",
+ "name": "Max Kramer - Interim CTO",
+ "short_name": "Max Kramer",
+ "description":  "Interim CTO/Engineering Lead specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -37,5 +39,9 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": ".",
+ "orientation": "portrait",
+ "background_color": "white",
+ "theme_color": "white"
 }
