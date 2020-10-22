@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Avatar, Box, Heading} from 'grommet';
 import SocialButtonGroup from './SocialButtonGroup';
-import Max from '../Max.jpg'
+import Max from '../Max.webp'
 
 class Header extends Component {
     render() {
