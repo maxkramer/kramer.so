@@ -9,13 +9,6 @@
   command = "yarn build"
   publish = "build"
 
-[[plugins]]
-  package = "netlify-plugin-hashfiles"
-
-  [plugins.inputs]
-  # Directory where content-addressable files are moved and immutable cache-headers are set
-  staticDir = "/static/"
-
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.
   for = "/*"
