@@ -11,6 +11,9 @@
 
 [[plugins]]
   package = "netlify-plugin-hashfiles"
+
+  [plugins.inputs]
+  # Directory where content-addressable files are moved and immutable cache-headers are set
   staticDir = "/static/"
 
 [[headers]]
