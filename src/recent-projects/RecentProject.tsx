@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Anchor, Box, Heading, Image, Paragraph} from 'grommet';
-import '../scss/index.scss';
 
 export default class RecentProject extends Component<Props> {
   render() {

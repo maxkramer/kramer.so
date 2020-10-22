@@ -4,6 +4,7 @@ import {css} from 'styled-components';
 import Header from "./header/Header";
 import About from "./about/About";
 import RecentProjects from "./recent-projects/RecentProjects";
+import './App.module.scss';
 
 function App() {
   return (

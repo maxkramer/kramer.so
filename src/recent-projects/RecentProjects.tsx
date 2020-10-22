@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Anchor, Grid} from 'grommet';
 import RecentProject from './RecentProject';
+import styles from '../App.module.scss';
 
 export default class RecentProjects extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class RecentProjects extends Component {
           <RecentProject imageSrc={'/img/bcgdv.svg'}
                          header={'Interim CTO'}
                          subtitle={'Safe@Work (S@W)'}
-                         imageClass={'hoverImage'}
+                         imageClass={ styles.hoverImage }
                          link={'https://medium.com/bcg-digital-ventures/s-w-a-solution-to-help-companies-to-manage-the-post-covid-19-return-to-work-894316db9e23'}
                          description={[
                            'In co-operation with BCG, I lead the development of a solution that helps companies ramp up after lockdown, protecting the health and safety of their employees and supporting them to reduce the risk of new (COVID-19) virus outbreaks at work.',
@@ -18,7 +19,7 @@ export default class RecentProjects extends Component {
                          ]}/>
           <RecentProject imageSrc={'/img/opensc.svg'}
                          header={'Interim CTO'}
-                         imageClass={'invertColor hoverImage'}
+                         imageClass={[styles.invertColor, styles.hoverImage].join(' ')}
                          subtitle={'OpenSC'}
                          link={'https://opensc.org'}
                          description={[
@@ -28,7 +29,7 @@ export default class RecentProjects extends Component {
           <RecentProject imageSrc={'/img/up42.svg'}
                          header={'Lead Engineer'}
                          subtitle={'UP42'}
-                         imageClass={'hoverImage'}
+                         imageClass={styles.hoverImage}
                          link={'https://up42.com'}
                          description={[
                            'UP42 is an open platform and marketplace dedicated to helping developers and startups build, run, and scale geospatial products. UP42 opens up access to geospatial data, imagery, and processing algorithms — allowing users to develop, launch, and monetise game-changing new products',
@@ -37,7 +38,7 @@ export default class RecentProjects extends Component {
           <RecentProject imageSrc={'/img/nexure.svg'}
                          header={'Lead Engineer'}
                          subtitle={'Nexure AG'}
-                         imageClass={'hoverImage'}
+                         imageClass={styles.hoverImage}
                          link={'https://www.linkedin.com/company/nexure'}
                          description={[
                            'Nexure was an exciting project developed for Electrolux AB in the B2C sector. It involved creating a\n' +
@@ -49,7 +50,7 @@ export default class RecentProjects extends Component {
                          header={'Senior Engineer'}
                          subtitle={'HeyCar'}
                          link={'https://hey.car'}
-                         imageClass={'hoverImage'}
+                         imageClass={styles.hoverImage}
                          description={[
                            'HeyCar combines the best dealers and the best cars without hosting advertorials. Their aim was to tackle this market and to become one of the leading players in DACH region very fast',
                            'At HeyCar, I implemented various backend micro-services in Java 8/Kotlin with Spring Boot, all running within a Kubernetes cluster on AWS, managed by Terraform.'
@@ -58,7 +59,7 @@ export default class RecentProjects extends Component {
                          header={'iOS Engineer'}
                          subtitle={'COUP Mobility'}
                          link={'https://de.wikipedia.org/wiki/Coup_(Unternehmen)'}
-                         imageClass={'hoverImage'}
+                         imageClass={styles.hoverImage}
                          description={[
                            'At COUP, I played an integral part of the venture, leading the development of the iOS app and supporting the Android.',
                              'This involved implementing the client-side hardware (iOS → Scooter) interaction as well as taking a driving-role in designing the architecture of the application to ensure a modular and testable codebase using VIPER.',
