@@ -13,8 +13,8 @@ export default class RecentProject extends Component<Props> {
         <Box alignSelf={'center'} direction={'column'} pad={{bottom: 'small'}}>
             <Heading level={4} margin={{top: 'xsmall', bottom: 'none', horizontal: 'medium'}}>{this.props.subtitle}</Heading>
             <Heading level={5} margin={{top: 'none', bottom: 'medium', horizontal: 'medium'}}>{this.props.header}</Heading>
-            {this.props.description.map(description => (
-                <Paragraph margin={{horizontal: 'small'}}>{description}</Paragraph>
+            {this.props.description.map((description, index) => (
+                <Paragraph key={index} margin={{horizontal: 'small'}}>{description}</Paragraph>
             ))}
         </Box>
       </Box>

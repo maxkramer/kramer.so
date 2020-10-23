@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
-import {Anchor, Grid} from 'grommet';
+import React from 'react';
+import {Anchor, Grid, ResponsiveContext} from 'grommet';
 import RecentProject from './RecentProject';
 import styles from '../App.module.scss';
 
-export default class RecentProjects extends Component {
-  render() {
+export default function RecentProjects() {
+    let size = React.useContext(ResponsiveContext);
+    const smallerSizes = ['xsmall', 'small'];
+    if (smallerSizes.indexOf(size) === -1) {
+      size = 'medium';
+    }
     return (
-        <Grid columns={"medium"} gap={'small'}>
+        <Grid columns={size} gap={'small'}>
           <RecentProject imageSrc={'/img/bcgdv.svg'}
                          header={'Interim CTO'}
                          subtitle={'Safe@Work (S@W)'}
@@ -67,5 +71,4 @@ export default class RecentProjects extends Component {
                          ]}/>
         </Grid>
     );
-  }
 }

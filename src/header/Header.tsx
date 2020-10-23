@@ -9,10 +9,10 @@ class Header extends Component {
         return (
             <Box alignSelf={'center'} direction={'column'}>
                 <Image alignSelf={'center'} className={styles.avatar} src={Max} loading={'lazy'} a11yTitle={"Picture of Max Kramer"} />
-                <SocialButtonGroup alignSelf={'center'} margin={{top: 'small'}} />
+                <SocialButtonGroup alignSelf={'center'} margin={{top: 'small', bottom: 'small'}} />
                 <Box direction={'column'} margin={{top: 'medium'}}>
-                    <Heading level={1} margin={{top: 'none', bottom: 'small'}} size={'medium'}>Hello. My name is Max Kramer.</Heading>
-                    <Heading level={2} margin={{ vertical: 'none'}} size={'small'}>I’m an Interim-CTO at BCG Digital Ventures, Berlin.</Heading>
+                    <Heading level={1} margin={{ vertical: 'none' }} size={'medium'}>Hello. My name is Max Kramer.</Heading>
+                    <Heading level={2} margin={{ top: 'medium', bottom: 'medium'}} size={'small'}>I’m an Interim-CTO at BCG Digital Ventures, Berlin.</Heading>
                 </Box>
             </Box>
         );
