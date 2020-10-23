@@ -9,7 +9,7 @@ import './App.module.scss';
 function App() {
   return (
     <Grommet theme={theme} full>
-          <Box pad={{ horizontal: 'xlarge', vertical: 'large' }}>
+          <Box pad={{ horizontal: 'large', vertical: 'large' }}>
               <Box alignSelf={'center'} width={'xlarge'}>
                 <Header />
                 <About />

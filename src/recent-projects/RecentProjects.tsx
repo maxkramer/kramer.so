@@ -4,13 +4,17 @@ import RecentProject from './RecentProject';
 import styles from '../App.module.scss';
 
 export default function RecentProjects() {
-    let size = React.useContext(ResponsiveContext);
-    const smallerSizes = ['xsmall', 'small'];
-    if (smallerSizes.indexOf(size) === -1) {
-      size = 'medium';
+    const size = React.useContext(ResponsiveContext);
+    const sizeMappings: { [size: string]: number } = {
+        'xsmall': 1,
+        'small': 1,
+        'medium': 2,
+        'large': 3,
+        'xlarge': 3
     }
+
     return (
-        <Grid columns={size} gap={'small'}>
+        <Grid columns={{count: sizeMappings[size] ?? 3, size: 'flex'}} gap={'small'}>
           <RecentProject imageSrc={'/img/bcgdv.svg'}
                          header={'Interim CTO'}
                          subtitle={'Safe@Work (S@W)'}

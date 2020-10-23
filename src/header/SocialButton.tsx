@@ -3,7 +3,7 @@ import {Button} from 'grommet';
 
 export default class SocialButton extends Component<Props> {
   render() {
-    return <Button href={this.props.href} title={this.props.title} icon={this.props.icon} hoverIndicator/>;
+    return <Button alignSelf={'start'} href={this.props.href} title={this.props.title} icon={this.props.icon} hoverIndicator/>;
   }
 }
 
