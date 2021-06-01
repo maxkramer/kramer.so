@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Box, Heading, Image, Text} from 'grommet';
+import {Box, Heading, Image } from 'grommet';
 import SocialButtonGroup from './SocialButtonGroup';
 import Max from '../Max.webp'
 import styles from "../App.module.scss"
