@@ -6,15 +6,11 @@ export default class About extends Component {
         return (
             <Box>
                 <Heading level={3} size={'small'} margin={{top: 'large', bottom: 'small'}}>DAY TO DAY</Heading>
-                <Paragraph fill={true}>As an Interim CTO at the company-builder arm of the Boston
-                    Consulting Group (BCG), I am responsible for developing and running
-                    high-performant engineering teams and contributing to our
-                    cross-functional startup teams on a strategic level.</Paragraph>
-                <Paragraph fill={true}>With a keen eye for design and a strong MVP-first mindset, I
-                    maintain a strong interest in building successful B2C and B2B products
-                    with the consumer in mind, working alongside product, I am a firm
-                    believer in design-thinking and testing hypotheses to confirm
-                    product-market fit.</Paragraph>
+                <Paragraph fill={true}>Recently working as a venture-CTO at the company-builder arm of the Boston
+                    Consulting Group (BCG) and a startup of my own, I am typically responsible for building and running
+                    high-performant engineering teams and contributing on a strategic / operations level.</Paragraph>
+                <Paragraph fill={true}>With a keen eye for design and a love for product, I
+                    get the most excited building B2C and B2B products with the user-first. Together with Product, I am a firm believer in design-thinking and testing hypotheses to confirm product-market fit and seeing this value come to life!</Paragraph>
                 <Paragraph fill={true}>I have been working in the engineering space for over 8-years, specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.</Paragraph>
             </Box>
         );
