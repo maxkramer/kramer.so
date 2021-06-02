@@ -21,4 +21,4 @@
     Content-Security-Policy = "default-src 'self' 'unsafe-inline' https://consent.cookiebot.com/uc.js https://ajax.cloudflare.com https://www.googletagmanager.com https://*.google-analytics.com https://*.cloudfront.net https://storage.googleapis.com/workbox-cdn/ data:;"
     X-Content-Security-Policy = "default-src 'self' 'unsafe-inline' https://consent.cookiebot.com/uc.js https://ajax.cloudflare.com https://www.googletagmanager.com https://*.google-analytics.com https://*.cloudfront.net https://storage.googleapis.com/workbox-cdn/ data:;"
     X-WebKit-CSP = "default-src 'self' 'unsafe-inline' https://consent.cookiebot.com/uc.js https://ajax.cloudflare.com https://www.googletagmanager.com https://*.google-analytics.com https://*.cloudfront.net https://storage.googleapis.com/workbox-cdn/ data:;"
-
+    X-Content-Type-Options = "nosniff"
