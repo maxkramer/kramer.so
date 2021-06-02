@@ -1,9 +1,9 @@
 import React from 'react';
-import {Box, Footer, grommet, Grommet, Heading, Text} from 'grommet';
+import {Box, Footer, grommet, Grommet, Text} from 'grommet';
 import {css} from 'styled-components';
 import Header from "./header/Header";
 import About from "./about/About";
-import RecentProjects from "./recent-projects/RecentProjects";
+import RecentWork from "./recent-work/RecentWork";
 import './App.module.scss';
 
 function App() {
@@ -13,9 +13,8 @@ function App() {
                 <Box alignSelf={'center'} width={'xlarge'}>
                     <Header/>
                     <About/>
-                    <Heading level={3} size={'small'} margin={{top: 'large', bottom: 'large'}}>RECENT WORK</Heading>
                 </Box>
-                <RecentProjects/>
+                <RecentWork/>
                 <Footer direction={"column"} alignSelf={'center'} pad={{'top': 'large'}}>
                     <Text textAlign={'center'}>© Max Kramer {new Date().getFullYear().toString()}</Text>
                     <Text size={"xsmall"}>

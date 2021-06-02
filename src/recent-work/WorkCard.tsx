@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Anchor, Box, Heading, Image, Paragraph} from 'grommet';
 
-export default class RecentProject extends Component<Props> {
+export default class WorkCard extends Component<Props> {
   render() {
     return (
       <Box fill border={{ size: 'small', side: 'all', color: 'light-1'}}>
         <Box alignSelf={'center'} height={'small'} pad={{vertical: 'large'}} direction={"column"}>
             <Anchor a11yTitle={this.props.link} href={this.props.link} icon={
-                <Image width={'150px'} loading={'lazy'} className={this.props.imageClass} src={this.props.imageSrc} alt={this.props.subtitle}/>
+                <Image fit={"cover"} width={'150px'} alignSelf={"center"} decoding={"async"} loading={'lazy'} className={this.props.imageClass} src={this.props.imageSrc} alt={this.props.subtitle}/>
             } />
         </Box>
         <Box width={'large'} alignSelf={'center'} direction={'column'} pad={{bottom: 'small'}}>
