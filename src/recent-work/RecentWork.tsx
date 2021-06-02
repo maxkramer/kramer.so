@@ -18,7 +18,7 @@ export default function RecentWork() {
             <Box pad={{vertical: 'xsmall'}} alignSelf={'center'} width={'xlarge'}>
                 <Heading level={2} size={'small'} margin={{top: 'large', bottom: 'large'}}>RECENT WORK</Heading>
             </Box>
-            <Grid columns={{count: sizeMappings[size] ?? 3, size: 'flex'}} gap={'small'}>
+            <Grid columns={{count: sizeMappings[size] ?? 3, size: 'auto'}} gap={'small'}>
                 <WorkCard imageSrc={'/img/alike.svg'}
                           header={'Engineering and Product Advisor'}
                           subtitle={'Alike'}
