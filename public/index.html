@@ -52,6 +52,19 @@
         margin: 0;
       }
     </style>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fe53820a-cf7b-4ecc-a2d4-261564eb079e" data-blockingmode="auto" type="text/javascript"></script>
+    <script type="application/javascript">
+      function CookiebotCallback_OnAccept() { // eslint-disable-line no-unused-vars
+        if(Cookiebot.consent.statistics) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-38565328-1', 'auto');
+          ga('send', 'pageview');
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -66,13 +79,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38565328-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-38565328-1');
-    </script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Anchor, Grid, ResponsiveContext} from 'grommet';
+import { Grid, ResponsiveContext} from 'grommet';
 import RecentProject from './RecentProject';
 import styles from '../App.module.scss';
 
@@ -15,24 +15,42 @@ export default function RecentProjects() {
 
     return (
         <Grid columns={{count: sizeMappings[size] ?? 3, size: 'flex'}} gap={'small'}>
+            <RecentProject imageSrc={'/img/alike.svg'}
+                           header={'Engineering and Product Advisor'}
+                           subtitle={'Alike'}
+                           imageClass={ styles.hoverImage }
+                           link={'https://alike.org.uk'}
+                           description={[
+                               'Alike is a social network for cancer-patients and survivors to share their journeys and combat isolation by finding people who are going through similar circumstances to them.',
+                               'Since 2019, I have been supporting Alike on all engineering and product topics, having built the native iOS application and backend stack pro-bono in my free-time. Alike is a very personal connection to me, having lost a very close friend to cancer, with Alike existing as his legacy.'
+                           ]}/>
+            <RecentProject imageSrc={'/img/weal.svg'}
+                           header={'Co-Founder / CTO'}
+                           subtitle={'WEAL'}
+                           imageClass={ styles.hoverImage }
+                           link={'https://weal.io'}
+                           description={[
+                               'Mid-2020, alongside two other co-founders, I co-founded WEAL; the platform for employees to improve their financial well-being, with this being one of the leading causes of stress and mental fatigue across the workforce.',
+                               'Our mission was to provide better financial products to those who were most in need and provide them with the education necessary to improve their financial situation, starting with the workplace-pension (bAV).'
+                           ]}/>
           <RecentProject imageSrc={'/img/bcgdv.svg'}
-                         header={'Interim CTO'}
+                         header={'Venture CTO'}
                          subtitle={'Safe@Work (S@W)'}
                          imageClass={ styles.hoverImage }
                          link={'https://medium.com/bcg-digital-ventures/s-w-a-solution-to-help-companies-to-manage-the-post-covid-19-return-to-work-894316db9e23'}
                          description={[
-                           'In co-operation with BCG, I lead the development of a solution that helps companies ramp up after lockdown, protecting the health and safety of their employees and supporting them to reduce the risk of new (COVID-19) virus outbreaks at work.',
-                           <Anchor
-                             href={'https://medium.com/bcg-digital-ventures/s-w-a-solution-to-help-companies-to-manage-the-post-covid-19-return-to-work-894316db9e23'}>https://medium.com/bcg-digital-ventures/s-w-a-solution-to-help-companies-to-manage-the-post-covid-19-return-to-work-894316db9e23</Anchor>
+                           'In co-operation with BCG, I lead the engineering team of a B2B on-premise solution aiming to help companies ramp up after lockdown, protecting the health and safety of their employees by reducing the risk of new COVID-19 virus outbreaks at work.',
+                             'As Venture-CTO, I was responsible for the engineering-team, sales-pitches with clients and supporting the team with architectural discussions and technical leadership.'
                          ]}/>
           <RecentProject imageSrc={'/img/opensc.svg'}
-                         header={'Interim CTO'}
+                         header={'Venture CTO'}
                          imageClass={[styles.invertColor, styles.hoverImage].join(' ')}
                          subtitle={'OpenSC'}
                          link={'https://opensc.org'}
                          description={[
                            'OpenSC is a new blockchain-enabled food tracking platform developed in partnership between WWF-Australia and BCG Digital Ventures.',
-                           'OpenSC uses cutting edge technology to track individual products from origin to consumer. The aim is to help businesses and consumers avoid illegal, environmentally damaging or unethical products, while improving supply chain accountability and transparency.'
+                           'OpenSC uses cutting edge technology to track individual products from origin to consumer. The aim is to help businesses and consumers avoid illegal, environmentally damaging or unethical products, while improving supply chain accountability and transparency.',
+                             'As Venture-CTO, I was responsible for the Berlin product-team (Engineering, Data Science, Product), interfacing and solutions architecture for clients, and hiring.'
                          ]}/>
           <RecentProject imageSrc={'/img/up42.svg'}
                          header={'Lead Engineer'}
@@ -41,7 +59,7 @@ export default function RecentProjects() {
                          link={'https://up42.com'}
                          description={[
                            'UP42 is an open platform and marketplace dedicated to helping developers and startups build, run, and scale geospatial products. UP42 opens up access to geospatial data, imagery, and processing algorithms — allowing users to develop, launch, and monetise game-changing new products',
-                           'I lead the engineering team to develop a scalable and secure system that would support a large number of user\'s running their machine-learning algorithms against our satellite data at once. We leverage the Google Cloud Platform and Kubernetes to deal with these issues.'
+                           'I lead the engineering team to develop a scalable and secure system that would support a large number of user\'s running their machine-learning algorithms against our satellite data at once. We leveraged the Google Cloud Platform and Kubernetes to deal with these issues.'
                          ]}/>
           <RecentProject imageSrc={'/img/nexure.svg'}
                          header={'Lead Engineer'}

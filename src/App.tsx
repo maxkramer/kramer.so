@@ -23,6 +23,7 @@ function App() {
                                                            title="Freeicons.io">Freeicons.io</a>
                     </Text>
                 </Footer>
+                <script id="CookieDeclaration" src="https://consent.cookiebot.com/fe53820a-cf7b-4ecc-a2d4-261564eb079e/cd.js" type="text/javascript" async></script>
             </Box>
         </Grommet>
     );
@@ -33,7 +34,6 @@ const theme = {
     button: grommet.button,
     heading: {
         weight: 300,
-        letterSpacing: 1,
         extend: css({'letter-spacing': '0.05em'})
     },
 };
