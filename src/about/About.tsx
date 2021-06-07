@@ -6,7 +6,7 @@ export default class About extends Component {
         return (
             <Box>
                 <Heading level={2} size={'small'} margin={{top: 'large', bottom: 'small'}}>ABOUT ME</Heading>
-                <Paragraph fill={true}>I have been working in the engineering space for over 8-years, specialising in solutions architecture, distributed systems, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development (iOS, React Native).</Paragraph>
+                <Paragraph fill={true}>I have been working in the engineering space for over 10-years, specialising in solutions architecture, distributed systems, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development (iOS, React Native).</Paragraph>
                 <Paragraph fill={true}>I am typically responsible for building and running
                     high-performant engineering teams and contributing on a strategic / operations level, having recently worked as a venture-CTO at the company-builder arm of the Boston
                     Consulting Group (BCG) and co-founding a startup of my own (WEAL).</Paragraph>
