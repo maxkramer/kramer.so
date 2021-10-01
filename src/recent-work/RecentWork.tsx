@@ -8,17 +8,24 @@ export default function RecentWork() {
     const sizeMappings: { [size: string]: number } = {
         'xsmall': 1,
         'small': 1,
-        'medium': 2,
-        'large': 3,
+        'medium': 1,
+        'large': 2,
         'xlarge': 3
     }
 
     return (
-        <Box>
-            <Box pad={{vertical: 'xsmall'}} alignSelf={'center'} width={'xlarge'}>
-                <Heading level={2} size={'small'} margin={{top: 'large', bottom: 'large'}}>RECENT WORK</Heading>
-            </Box>
-            <Grid columns={{count: sizeMappings[size] ?? 3, size: 'auto'}} gap={'small'}>
+        <Box margin={{top: 'large'}}>
+            <Heading alignSelf={'start'} level={2} size={'small'} margin={{top: 'large', bottom: 'large'}}>RECENT WORK</Heading>
+            <Grid columns={{count: sizeMappings[size] ?? 3, size: 'auto'}} gap={'large'}>
+                <WorkCard imageSrc={'/img/vitamin.svg'}
+                          header={'CTO'}
+                          subtitle={'Vitamin'}
+                          imageClass={styles.hoverImage}
+                          link={'https://joinvitamin.com'}
+                          description={[
+                              'Vitamin is a platform to power strong financial futures for all women. In a world where globally women own only 40% of wealth, we are building Vitamin to close the wealth gap one woman at a time.',
+                              'Our vision is focused on tailored and jargon-free financial education and intuitive tools to help women achieve their saving and investing goals. We get up every morning with a clear mission - change the world by building long-term wealth for our female users.'
+                          ]}/>
                 <WorkCard imageSrc={'/img/alike.svg'}
                           header={'Engineering and Product Advisor'}
                           subtitle={'Alike'}

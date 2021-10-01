@@ -11,7 +11,7 @@ export default class WorkCard extends Component<Props> {
             } />
         </Box>
         <Box width={'large'} alignSelf={'center'} direction={'column'} pad={{bottom: 'small'}}>
-            <Heading level={4} margin={{top: 'xsmall', bottom: 'none', horizontal: 'medium'}}><Anchor href={this.props.link}>{this.props.subtitle}</Anchor></Heading>
+            <Heading level={4} margin={{top: 'xsmall', bottom: 'none', horizontal: 'medium'}}><Anchor href={this.props.link}>{this.props.subtitle + " >"}</Anchor></Heading>
             <Heading level={5} margin={{top: 'none', bottom: 'medium', horizontal: 'medium'}}>{this.props.header}</Heading>
             {this.props.description.map((description, index) => (
                 <Paragraph fill key={index} margin={{horizontal: 'medium'}}>{description}</Paragraph>

@@ -6,26 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Max Kramer - Engineering Leader</title>
-    <meta name="description" content="Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
+    <meta name="description" content="CTO of Vitamin; Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
 
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Max Kramer - Engineering Leader">
-    <meta itemprop="description" content="Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
+    <meta itemprop="description" content="CTO of Vitamin; Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Max Kramer - Engineering Leader">
-    <meta name="twitter:description" content="Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
+    <meta name="twitter:description" content="CTO of Vitamin; Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
     <meta name="twitter:site" content="@mxkrmr">
     <meta name="twitter:creator" content="@mxkrmr">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Max Kramer - Engineering Leader">
-    <meta name="og:description" content="Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
+    <meta name="og:description" content="CTO of Vitamin; Engineering leader specialising in distributed systems, solutions architecture, cloud-infrastructure (AWS, GCP, Azure, Terraform) and mobile development.">
     <meta name="og:url" content="https://kramer.so">
     <meta name="og:site_name" content="Max Kramer - Engineering Leader">
     <meta name="og:locale" content="en_GB">
     <meta name="og:type" content="website">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
 
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
@@ -36,17 +36,8 @@
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="canonical" href="https://kramer.so">
     <link rel="home" href="https://kramer.so">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="dns-prefetch" href="https://consent.cookiebot.com/">
     <style>
       body {
         margin: 0;
@@ -54,8 +45,8 @@
     </style>
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fe53820a-cf7b-4ecc-a2d4-261564eb079e" data-blockingmode="auto" type="text/javascript"></script>
     <script type="application/javascript">
-      function CookiebotCallback_OnAccept() { // eslint-disable-line no-unused-vars
-        if(Cookiebot.consent.statistics) {
+      window.addEventListener('CookiebotOnAccept', function (e) {
+        if (Cookiebot.consent.statistics) {
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -66,7 +57,7 @@
 
           console.log("Initialized GA");
         }
-      }
+      }, false);
     </script>
   </head>
   <body>
@@ -82,5 +73,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/fe53820a-cf7b-4ecc-a2d4-261564eb079e/cd.js" type="text/javascript" async></script>
   </body>
 </html>
